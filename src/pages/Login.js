@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import Divider from "@mui/material/Divider";
 import Button from "@mui/material/Button";
+import Paper from "@mui/material/Paper";
 
 const Login = () => {
   return (
@@ -12,7 +13,10 @@ const Login = () => {
       justifyContent={"center"}
       alignItems={"center"}
     >
-      <Stack width={"50%"} spacing={2}>
+      <Stack
+        width={{ xs: "100%", sm: "100%", md: "100%", lg: "50%" }}
+        spacing={2}
+      >
         <Typography variant="h5" component={"h5"}>
           Login
         </Typography>
