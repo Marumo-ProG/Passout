@@ -103,16 +103,6 @@ function ResponsiveDrawer(props) {
             <ListItemText primary={"Logout"} />
           </ListItemButton>
         </ListItem>
-        {/* {["Support", "Logout"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))} */}
       </List>
     </div>
   );
@@ -192,7 +182,9 @@ function ResponsiveDrawer(props) {
         }}
       >
         <Toolbar />
-        <Stack>{props.children}</Stack>
+        <Stack height={"100%"} width={"100%"}>
+          {props.children}
+        </Stack>
       </Box>
     </Box>
   );

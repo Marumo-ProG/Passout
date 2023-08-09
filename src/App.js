@@ -2,13 +2,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // pages
-import AuthPage from "./pages/AuthPage";
 import Layout from "./Layouts/AuthLayout";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NoPage from "./pages/NoPage";
 import DashLayout from "./Layouts/DashLayout";
 import Dashboard from "./pages/Dashboard";
+import Students from "./pages/Students";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         </Route>
         <Route path="/admin" element={<DashLayout />}>
           <Route index element={<Dashboard />} />
+          <Route path="students" element={<Students />} />
         </Route>
       </Routes>
     </BrowserRouter>
