@@ -88,6 +88,35 @@ const Dashboard = () => {
           </Paper>
         </Grid>
       </Grid>
+
+      <Divider />
+      <Paper variant="elevation" elevation={3} sx={{ width: "100%" }}>
+        <Stack height={"100%"} width={"100%"} padding={5}>
+          <Typography variant="h4" component={"h1"}>
+            Instructions
+          </Typography>
+          <br />
+          <Typography variant="h5" component={"h1"}>
+            This application was made for the resgistering and verifying of
+            students devices upon entering and exiting of campus
+          </Typography>
+          <h5>
+            *This application was made for the resgistering and verifying of
+            students devices upon entering and exiting of campus
+          </h5>
+          <h5>
+            *The students section shows the registered students together with
+            their devices, to register a new student there is a button to add a
+            student. You can also remove or edit student's information from
+            there
+          </h5>
+          <h5>
+            *To report a stolen device or review stolen reported devices you can
+            go the report section, this page will allow you to report a missing
+            device, confirm if a device has been found
+          </h5>
+        </Stack>
+      </Paper>
     </Stack>
   );
 };
