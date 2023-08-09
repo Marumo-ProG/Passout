@@ -7,6 +7,8 @@ import Layout from "./Layouts/AuthLayout";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NoPage from "./pages/NoPage";
+import DashLayout from "./Layouts/DashLayout";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="*" element={<NoPage />} />
+        </Route>
+        <Route path="/admin" element={<DashLayout />}>
+          <Route index element={<Dashboard />} />
         </Route>
       </Routes>
     </BrowserRouter>
