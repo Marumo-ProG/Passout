@@ -11,20 +11,15 @@ import ErrorIcon from "@mui/icons-material/Error";
 
 const Dashboard = () => {
   return (
-    <Stack spacing={2} height={"100%"} width={"100%"}>
+    <Stack spacing={2} height={"100%"} width={{ xs: "80%", md: "100%" }}>
       <h1>Home</h1>
       <Divider sx={{ width: "20%" }} />
       <Grid container spacing={2}>
-        <Grid item sm={12} md={4} lg={4}>
-          <Paper
-            variant="elevation"
-            elevation={3}
-            sx={{ width: "100%", height: "200px" }}
-          >
+        <Grid item xs={12} md={12} lg={4}>
+          <Paper variant="elevation" elevation={3} sx={{ height: "200px" }}>
             <Stack
               alignItems={"center"}
               justifyContent={"center"}
-              width={"100%"}
               height={"100%"}
             >
               <PeopleAltIcon sx={{ fontSize: "60px" }} />
@@ -39,7 +34,7 @@ const Dashboard = () => {
             </Stack>
           </Paper>
         </Grid>
-        <Grid item sm={12} md={4} lg={4}>
+        <Grid item xs={12} md={4} lg={4}>
           <Paper
             variant="elevation"
             elevation={3}
@@ -63,7 +58,7 @@ const Dashboard = () => {
             </Stack>
           </Paper>
         </Grid>
-        <Grid item sm={12} md={4} lg={4}>
+        <Grid item xs={12} md={4} lg={4}>
           <Paper
             variant="elevation"
             elevation={3}

@@ -23,6 +23,7 @@ function App() {
         <Route path="/admin" element={<DashLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="students" element={<Students />} />
+          <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

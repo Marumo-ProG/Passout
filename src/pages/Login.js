@@ -1,3 +1,6 @@
+// react
+import { useNavigate } from "react-router-dom";
+
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
@@ -6,6 +9,7 @@ import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 
 const Login = () => {
+  const Navigate = useNavigate();
   return (
     <Stack
       height={"100%"}
@@ -27,7 +31,12 @@ const Login = () => {
           Forgot Password
         </Typography>
         <Stack width={"100%"} alignItems={"center"}>
-          <Button type="submit" variant="contained" sx={{ width: "40%" }}>
+          <Button
+            type="submit"
+            variant="contained"
+            sx={{ width: "40%" }}
+            onClick={() => Navigate("admin")}
+          >
             Login
           </Button>
         </Stack>
